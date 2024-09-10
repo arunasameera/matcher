@@ -11,14 +11,10 @@
 
     <artifactId>apifirst-api</artifactId>
 
-    <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+
 
     <dependencies>
-        <!-- For working with Excel files -->
+        <!-- For working with Excel files (HSSF and XSSF) -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
@@ -31,14 +27,14 @@
             <version>5.0.0</version>
         </dependency>
 
-        <!-- Required to support XML file formats -->
+        <!-- For XML Beans used by Apache POI -->
         <dependency>
             <groupId>org.apache.xmlbeans</groupId>
             <artifactId>xmlbeans</artifactId>
             <version>4.0.0</version>
         </dependency>
 
-        <!-- Required for handling streaming of large .xlsx files -->
+        <!-- Required for handling large Excel files -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml-schemas</artifactId>
